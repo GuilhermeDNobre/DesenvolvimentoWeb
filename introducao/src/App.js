@@ -1,17 +1,18 @@
 //import HelloWorld from "./components/01HelloWorld/HelloWorld";
-//import FuncoesInternas from "./components/02FuncoesInternas/FuncoesInternas";
-// import Loja from "./components/03Props/Loja";
-// import MeusDados from "./components/atividade00/01MeusDados";
-// import MeusDados from "./components/atividade00/02MeusDados";
-import MeusDados from "./components/atividade00/02MeusDados";
+//import Pai from "./components/atividade01/questao01/01Pai";
+//import * as PC from "./components/atividade01/questao02/02MeuPC";
+import * as Batalha from "./components/atividade01/questao03/03.Batalha";
 
 function App() {
   return (
-    <div>
-      <h1> Desenvolvimento de Software para a WEB!</h1>
-      <MeusDados nome="Guilherme Damasceno Nobre" curso="Engenharia de Software" universidade="UFC"/>
-      <MeusDados nome="Antonia Vitoria" curso="Redes de Computadores" universidade="UFC" />
-    </div>
+    <Batalha.World>
+      <Batalha.Arena arena="Pedra da Galinha 
+      Choca" />
+      <hr></hr>
+      <Batalha.Arena arena="Açude Cedro" />
+    </Batalha.World>
+      
+    
   );
 }
 
